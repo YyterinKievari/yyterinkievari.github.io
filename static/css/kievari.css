@@ -26,6 +26,7 @@ body {
     background-size: auto;
     background-position: center;
     margin: auto;
+    box-shadow: #222 0 0 10px 2px;
 }
 
 .hero h1 {
