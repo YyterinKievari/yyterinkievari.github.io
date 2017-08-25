@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+    <link href="/static/css/blueprint.min.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="/static/css/kievari.css" media="screen" rel="stylesheet" type="text/css" />
+
+    <link href="https://fonts.googleapis.com/css?family=Berkshire+Swash|Lato:300i|Lora" rel="stylesheet">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <title>Yyterin Kievari</title>
+
+
+</head>
+    <body>
+        <div class="hero">
+          <h1>Yyterin Kievari</h1>
+        </div>
+        <div class="wrapper">
+            <div class="flex-row">
+                <div class="col-1@lg show@lg hide"></div>
+                <div class="col-2@lg col-3@md col-12@sm">
+                    <nav>
+                        <ul>
+                            <li class="burger-menu mobile"><a data-i18n-en="&#9776; Menu">&#9776; Valikko</a></li>
+                            <li class="active"><a href="#" data-i18n-en="Home">Etusivu</a></li>
+                            <li><a href="#majoitus" data-i18n-en="Accommodation">Majoitus</a></li>
+                            <li><a href="#kokoustilat" data-i18n-en="Meeting lounge">Kokoustilat</a></li>
+                            <li><a href="#lisapalvelut" data-i18n-en="Services">Lisäpalvelut</a></li>
+                            <li><a href="#yhteystiedot" data-i18n-en="Contact">Yhteystiedot</a></li>
+                        </ul>
+                    </nav>
+                </div>
+                <div class="col-7@lg col-8@md col-12@sm">
+                    <article>
+                      <q>Keidas keskellä Yyteriä</q>
+                      <p>
+                        Loma- tai työmajoitusta rauhallisessa, luonnonläheisessä Kievarissa, aivan Yyterin hiekkarantojen kupeessa. Koe luonnonkaunis Yyterin houkutus joka vuodenaikana. Perheen pienimpien puuhamaa ja aikusten leikkikenttä tarjoaa mahdollisuudet niin rauhalliseen perhelomaan kuin myös menoa, sitä kaipaaville.
+                        <br>
+                        <br>"Kivenheiton" päässä löytyy ratsastusmahdollisuudet. Golf-, surffaus-, kalastus-, uinti- ja hiihtomahdollisuudet ovat lähempänä kuin voisi kuvitellakkaan, unohtamatta Yyterin nakurantaa. Patikointia ja lintujen tarkkailua yhdessä Suomen lajistoltaan monipuolisimmassa maisemissa. Lähellä useita mahtavia lintupaikkoja mm. Yyteri, Preiviikinlahti ja Kokemäenjoensuisto. Kävelymatkan päässä Leveäkari ja Lankoorin kahlaajalietteet.
+                        <br>
+                        <br>Ympärivuotista majoitusta 20 hengelle sekä kesällä 40 hengelle.
+                        <br>Kokous- ja juhlatilat 55-60 hengelle.
+                        <br>
+                        <br>Paikalla sinua palvelee ystävällinen henkilökunta, tarvittaessa ympäri vuorokauden.
+                        <br>
+                        <br>
+                        <br>
+                        <b>TERVETULOA</b>
+                      </p>
+                      <hr>
+                      <section id="majoitus">
+                        <h2>Majoitus</h2>
+                        <p>
+                          <br>Ympärivuotista majoitusta 20 hengelle sekä kesällä 40 hengelle.
+                          <br>
+                          <br><b>A-kausi: 1.6. - 31.8.</b>
+                          <br>
+                          <br><b>B-kausi: 1.9. - 31.5.</b>
+                          <br>
+                          <br>Pori Jazzien ja muiden tapahtumien aikana voimassa erikoishinnat.
+                          <br>
+                          <br>Pidempiaikainen majoitus sopimuksen mukaan.
+                          <br>
+                          <br>Tiedustelut ja varaukset puhelimitse numerosta 02 638 3922 tai sähköpostilla info@yyterinkievari.fi.
+                        </p>
+                      </section>
+                    </article>
+                </div>
+                <div class="col-2@lg show@lg hide"></div>
+            </div>
+            <div class="flex-row">
+              <div class="col text-center">
+                <footer>Yyterin Gasthaus Oy	Yyterinsantojentie 10 A, 28840 Pori	+358 2 638 3922	info@yyterinkievari.fi	Y-tunnus: 2451131-5</footer>
+              </div>
+            </div>
+        </div>
+    </body>
+
+    <script>
+        var menuAction = function() {
+            var menu = $("nav");
+            if (menu.hasClass("responsive")) {
+                menu.removeClass("responsive");
+            } else {
+                menu.addClass("responsive");
+            }
+        }
+
+        $("nav ul li").click(menuAction);
+        $("nav ul li:not(.burger-menu)").click(function() {
+          $("li.active").removeClass("active");
+          $(this).addClass("active");
+        });
+        $("nav ul li a").click(function(e) {
+          //e.preventDefault();
+
+        });
+    </script>
+</html>
